@@ -1,0 +1,83 @@
+@import "global";
+@import "grid";
+
+//
+// Footer
+//
+
+// Creating textured background to be used in the footer
+$footer-bg: url(../img/grunge_wall.png) !default;
+
+* {
+  list-style-type: none;
+}
+
+.main-footer {
+  margin: 0 auto;
+  height: 270px;
+  background: $footer-bg;
+}
+
+.footer-content {
+  margin-top: 30px;
+  text-align: center;
+  h5 {
+    font-size: 16px;
+  	font-family: $body-font-family;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
+
+.footer-social li {
+	display: inline-block;
+  width: 38px;
+	opacity: 0.7;
+	&:hover {
+		opacity: 1;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    
+    @-webkit-keyframes pulse {
+        0% { -webkit-transform: scale(1); } 
+      50% { -webkit-transform: scale(1.1); }
+        100% { -webkit-transform: scale(1); }
+    }
+    @-moz-keyframes pulse {
+        0% { -moz-transform: scale(1); }  
+      50% { -moz-transform: scale(1.1); }
+        100% { -moz-transform: scale(1); }
+    }
+    @-o-keyframes pulse {
+        0% { -o-transform: scale(1); }  
+      50% { -o-transform: scale(1.1); }
+        100% { -o-transform: scale(1); }
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); } 
+      50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+	}
+}
+
+.takomo {
+  p {
+    font-size: 12px;
+  	text-align: right;
+  }
+}

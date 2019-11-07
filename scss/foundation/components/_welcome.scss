@@ -1,0 +1,147 @@
+@import "global";
+@import "grid";
+
+//
+// Welcome page
+//
+
+* {
+  list-style-type: none;
+}
+
+.texture-bg {
+  background: $topbar-bg;
+}
+
+.welcome-logo {
+  z-index: 1;
+  postion:relative;
+  margin-top: 4%;
+  text-align: center; 
+  img {
+    @media #{$medium-up} {
+      width: 60%; 
+    }
+  }
+}
+
+.welcome-social {
+  margin-top: 30px;
+}
+
+.social-icons {
+  margin-top: -40px;
+  margin-left: -2px;
+  text-align: center;
+  li {
+    display: inline-block;
+    width: 38px;
+    @media #{$small-only} {
+      width: 40px;
+    }
+    &:hover {
+      -webkit-animation-fill-mode:both;
+      -moz-animation-fill-mode:both;
+      -ms-animation-fill-mode:both;
+      -o-animation-fill-mode:both;
+      animation-fill-mode:both;
+      -webkit-animation-duration:1s;
+      -moz-animation-duration:1s;
+      -ms-animation-duration:1s;
+      -o-animation-duration:1s;
+      animation-duration:1s;
+
+      -webkit-animation-name: pulse;
+      -moz-animation-name: pulse;
+      -o-animation-name: pulse;
+      animation-name: pulse;
+      
+      @-webkit-keyframes pulse {
+          0% { -webkit-transform: scale(1); } 
+        50% { -webkit-transform: scale(1.1); }
+          100% { -webkit-transform: scale(1); }
+      }
+      @-moz-keyframes pulse {
+          0% { -moz-transform: scale(1); }  
+        50% { -moz-transform: scale(1.1); }
+          100% { -moz-transform: scale(1); }
+      }
+      @-o-keyframes pulse {
+          0% { -o-transform: scale(1); }  
+        50% { -o-transform: scale(1.1); }
+          100% { -o-transform: scale(1); }
+      }
+      @keyframes pulse {
+          0% { transform: scale(1); } 
+        50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+      }
+    }
+  }
+}
+
+.yellow-button {
+  z-index: 1;
+  position: relative;
+  margin-top: 65px;
+  margin-left: 500px;
+  width: 45px;
+  height: 44px;
+  @media #{$medium-only} {
+    display: none;
+  }
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
+.purple-button {  
+  z-index: 1;
+  position: relative;
+  margin-top: 258px;
+  margin-left: 300px;
+  width: 43px;
+  height: 44px;
+  @media #{$medium-only} {
+    display: none;
+  }
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
+.gray-button {  
+  z-index: 1;
+  position: relative;
+  margin-top: -44px;
+  margin-left: 343px;
+  width: 43px;
+  height: 44px;
+  @media #{$medium-only} {
+    display: none;
+  }
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
+.welcome-text {
+  margin-top: 30px;
+  text-align: center;
+  p {
+    color: darken(#e5e5e5, 30%);
+    font-size: 12px;
+    @media #{$small-only} {
+      font-size: 10px;
+    }
+  }
+}
+
+.no-dots {
+  @media #{$small-only} {
+    display: none;
+  }
+  @media #{$medium-only} {
+    display: none;
+  }
+}

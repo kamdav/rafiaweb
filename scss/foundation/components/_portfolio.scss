@@ -1,0 +1,126 @@
+@import "global";
+@import "grid";
+
+//
+// Portfolio page
+//
+
+.portfolio-thumb ul li {
+	margin: 0 0 20px 60px;
+	@media #{$large-up} {
+		margin: 0 0 20px 25px;
+	}
+	@media #{$small-only} {
+		margin: 0 0 20px 20px;
+	}
+}
+
+.thumb-imgs img {
+	z-index: 1;
+	height: 150px;
+	width: 150px;
+	@media #{$large-up} {
+		height: 200px;
+		width: 200px;
+		&:hover {
+			background-color: gray;
+		}
+	}
+	@media #{$small-only} {
+		height: 100px;
+		width: 100px;
+	}
+	@media #{$large-up} {
+		&:hover {
+	    opacity: 0.3;
+	    -webkit-transition: opacity .3s ease-in-out;
+	    -moz-transition: opacity .3s ease-in-out;
+	    -ms-transition: opacity .3s ease-in-out;
+	    -o-transition: opacity .3s ease-in-out;
+	    transition: opacity .3s ease-in-out;
+		}
+		&:hover + .thumb-text {
+			opacity: 1;
+	    -webkit-transition: opacity .3s ease-in-out;
+	    -moz-transition: opacity .3s ease-in-out;
+	    -ms-transition: opacity .3s ease-in-out;
+	    -o-transition: opacity .3s ease-in-out;
+	    transition: opacity .3s ease-in-out;
+		}
+	}
+}
+
+.thumb-text {
+	z-index: 1;
+	display: none;
+	width: 200px;
+	height: 200px;
+	pointer-events: none;
+	@media #{$large-up} {
+		display: block;
+		position: absolute;
+		margin: -200px 0 0 0;
+		padding-top: 20px;
+		opacity: 0;
+		text-align: center;
+	}
+}
+
+.ayle {
+	position: relative;
+	margin-left: -190px;
+	text-align: center;
+	@media #{$small-only} {
+		margin-left: -150px;
+	}
+}
+
+.ayles-project {
+	img {
+		position: absolute;
+		width: 220px;
+	}
+	@media #{$small-only} {
+		img {
+			width: 150px;
+		}
+		margin-bottom: 30px;
+	}
+}
+
+.set-image {
+	img {
+		margin-left: -40px;
+		position: absolute;
+		opacity: 0;
+		&:hover {
+			margin-top: -40px;
+			opacity: 1;
+			transition: 0.5s;
+		}
+	}
+	@media #{$small-only} {
+		img {
+			margin-left: -0px;
+			width: 150px;
+			&:hover {
+				margin-top: -15px;
+			}
+		}
+	}
+}
+
+.clear {
+	margin-top: 250px;
+}
+
+
+
+//
+// AND TESTIMONIALS
+//
+
+
+.testi {
+	margin: 50px 0;
+}

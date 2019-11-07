@@ -1,0 +1,95 @@
+@import "global";
+@import "grid";
+
+//
+// R Interiors page
+//
+
+.indulge {
+	margin-top: 10px;
+	img {
+		margin-top: -9px;
+	}
+	li {
+		display: inline-block;
+	}
+}
+
+.style-text {
+	margin-left: -20px;
+}
+
+.pricing-table {
+	h4 {
+		color: #fff;
+	}
+	span {
+		font-size: 15px;
+		font-style: italic;
+	}
+}
+
+.descrip1 p {
+	text-align: left;
+}
+
+.descrip2 p {
+	text-align: center;
+}
+
+.descrip3 p {
+	text-align: right;
+}
+
+.further {
+	text-align: center;
+	p {
+		color: #490027;
+	}
+	span {
+		text-decoration: underline;
+	}
+}
+
+.notice {
+	margin-top: 15px;
+	p {
+		font-size: 14px;
+	}
+	span {
+		color: red;
+	}
+}
+
+.hidden {
+	span {
+		display: none;
+	}
+}
+
+.terms {
+	text-align: right;
+}
+
+.assure {
+	color: #490027;
+}
+
+.spaced {
+	margin-bottom: 20px;
+}
+
+.free-cons {
+	margin-top: -15px;
+	margin-bottom: 20px;
+	text-align: center !important;
+}
+
+.pack {
+	color: darken(#fff, 30%);
+	font-style: normal !important;
+}
+
+.offer {
+	padding: 20px 0 0 10px;
+}
